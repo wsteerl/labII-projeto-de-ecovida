@@ -1,0 +1,8 @@
+﻿CREATE TABLE FaleConosco (
+    ID INT IDENTITY PRIMARY KEY,
+    UsuarioID INT NOT NULL,
+    Mensagem NVARCHAR(MAX) NOT NULL,
+    DataMensagem DATETIME DEFAULT GETDATE(),
+    Respondido BIT DEFAULT 0,
+    CONSTRAINT FK_FaleConosco_Usuarios FOREIGN KEY (UsuarioID) REFERENCES Alunos(ID)
+);
