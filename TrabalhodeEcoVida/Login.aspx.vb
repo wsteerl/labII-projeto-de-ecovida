@@ -13,7 +13,7 @@ Partial Class Login
             Return
         End If
 
-        Dim connString As String = ConfigurationManager.ConnectionStrings("EcoVidaBD").ConnectionString
+        Dim connString As String = ConfigurationManager.ConnectionStrings("EcoVidaBDConnectionString").ConnectionString
 
         Using conn As New SqlConnection(connString)
             Dim sql As String = "SELECT COUNT(*) FROM Alunos WHERE NomeLogin = @NomeLogin AND Senha = @Senha"
@@ -26,7 +26,7 @@ Partial Class Login
                 Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
                 If count > 0 Then
                     ' Login válido, redireciona para a página principal
-                    Response.Redirect("PaginaPrincipal.aspx")
+                    Response.Redirect("CadastroCategorias.aspx") ' Confirme o nome correto do arquivo
                 Else
                     ClientScript.RegisterStartupScript(Me.GetType(), "alert", "alert('Nome de usuário ou senha inválidos.');", True)
                 End If
