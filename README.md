@@ -39,11 +39,15 @@ git clone https://github.com/wsteerl/labII-projeto-ecovida
 3. **Configure a string de conexão no arquivo `Web.config`:**
 
 ```xml
-<connectionStrings>
-  <add name="EcoVidaBD"
-       connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\EcoVidaBD.mdf;Integrated Security=True;User Instance=True"
-       providerName="System.Data.SqlClient"/>
-</connectionStrings>
+	<connectionStrings>
+		<add name="EcoVidaBDConnectionString"
+			 connectionString="Data Source=(LocalDB)\MSSQLLocalDB;
+                           AttachDbFilename=C:\Users\user\Documents\EcoVidaBD.mdf;
+                           Integrated Security=True;
+                           Connect Timeout=30;
+                           Encrypt=False"
+			 providerName="System.Data.SqlClient" />
+	</connectionStrings>
 ```
 
 4. **Configure o banco de dados:**
