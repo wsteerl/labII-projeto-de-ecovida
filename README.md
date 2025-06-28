@@ -120,4 +120,4 @@ Para implantar o EcoVida em um servidor:
 * **Isabel** — *Modelagem Lógica & READ.me*
 * **Ayla & Ândrya** — *Minimundo & Protótipo no Excalidraw*
 
-Veja também a lista completa de [colaboradores](http://bit.ly/3G28Lrv) que participaram deste projeto e cada uma de suas funções.
+Veja também a lista completa de [colaboradores](https://silicon-troodon-95f.notion.site/Projeto-EcoVida-WebSite-1a443957c9c3807e868bc0a83f4a38ab) que participaram deste projeto e cada uma de suas funções.
