@@ -31,7 +31,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 1. **Clone este repositório:**
 
 ```bash
-git clone https://github.com/wsteerl/labII-projeto-ecovida
+git clone https://github.com/wsteerl/labII-projeto-de-ecovida/tree/main
 ```
 
 2. **Abra o projeto no Visual Studio.**
